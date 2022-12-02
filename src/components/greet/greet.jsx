@@ -1,3 +1,3 @@
-export const Greet = () => {
-  return <div>Hello</div>;
+export const Greet = ({ name }) => {
+  return <div>Hello {name}</div>;
 };
