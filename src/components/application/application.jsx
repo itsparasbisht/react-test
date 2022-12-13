@@ -1,6 +1,6 @@
 import React from "react";
 
-function application() {
+function Application() {
   return (
     <form>
       <div>
@@ -29,4 +29,4 @@ function application() {
   );
 }
 
-export default application;
+export default Application;
