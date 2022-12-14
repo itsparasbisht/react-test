@@ -15,6 +15,11 @@ describe("Application", () => {
     });
     expect(headingElement).toBeInTheDocument();
 
+    const nameElement2 = screen.getByLabelText("Name", {
+      selector: "input",
+    });
+    expect(nameElement2).toBeInTheDocument();
+
     const jobLocationElement = screen.getByRole("combobox");
     expect(jobLocationElement).toBeInTheDocument();
 
