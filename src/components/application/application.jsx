@@ -5,7 +5,9 @@ function Application() {
     <>
       <h1>Apply for role</h1>
       <h3>Dev jobs</h3>
+
       <p>All fields are mandatory</p>
+      <span title="close">X</span>
 
       <img src="" alt="a person" />
 
