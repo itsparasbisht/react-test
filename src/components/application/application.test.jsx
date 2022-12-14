@@ -9,16 +9,19 @@ describe("Application", () => {
     });
     expect(nameElement).toBeInTheDocument();
 
+    const nameElement2 = screen.getByLabelText("Name", {
+      selector: "input",
+    });
+    expect(nameElement2).toBeInTheDocument();
+
+    const nameElement3 = screen.getByPlaceholderText("Full name");
+    expect(nameElement3).toBeInTheDocument();
+
     const headingElement = screen.getByRole("heading", {
       name: "Apply for role",
       level: 1,
     });
     expect(headingElement).toBeInTheDocument();
-
-    const nameElement2 = screen.getByLabelText("Name", {
-      selector: "input",
-    });
-    expect(nameElement2).toBeInTheDocument();
 
     const jobLocationElement = screen.getByRole("combobox");
     expect(jobLocationElement).toBeInTheDocument();
