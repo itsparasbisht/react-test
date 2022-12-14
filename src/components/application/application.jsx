@@ -5,6 +5,7 @@ function Application() {
     <>
       <h1>Apply for role</h1>
       <h3>Dev jobs</h3>
+      <p>All fields are mandatory</p>
       <form>
         <div>
           <label htmlFor="name">Name</label>
