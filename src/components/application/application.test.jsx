@@ -37,5 +37,8 @@ describe("Application", () => {
 
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
+
+    const imageElement = screen.getByAltText("a person");
+    expect(imageElement).toBeInTheDocument();
   });
 });
