@@ -10,6 +10,7 @@ function Application() {
       <span title="close">X</span>
 
       <img src="" alt="a person" />
+      <div data-testid="custom-element">Custom element</div>
 
       <form>
         <div>
