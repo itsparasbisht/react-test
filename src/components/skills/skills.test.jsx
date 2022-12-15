@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { logRoles, render, screen } from "@testing-library/react";
 import Skills from "./Skills";
 
 describe("Skills Component", () => {
@@ -31,7 +31,8 @@ describe("Skills Component", () => {
   });
 
   test("start learning eventually appears", async () => {
-    render(<Skills skills={skills} />);
+    const view = render(<Skills skills={skills} />);
+    logRoles(view.container);
     const startButton = await screen.findByRole(
       "button",
       {
