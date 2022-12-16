@@ -32,8 +32,7 @@ describe("Counter component", () => {
     user.setup();
     render(<Counter />);
     const incrementButton = screen.getByRole("button", { name: "Increment" });
-    await user.click(incrementButton);
-    await user.click(incrementButton);
+    await user.dblClick(incrementButton);
 
     const countElement = screen.getByRole("heading");
     expect(countElement).toHaveTextContent("2");
